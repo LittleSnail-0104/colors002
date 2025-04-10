@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>放射漸層效果</title>
+  <style>
+    body {
+      margin: 20px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      width: 100px;
+      height: 130px;
+      border: 1px solid #000;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .box1 {
+      background: radial-gradient(at top, pink, blue);
+    }
+
+    .box2 {
+      background: radial-gradient(at bottom, pink, blue);
+    }
+
+    .box3 {
+      background: radial-gradient(at top left, pink, blue);
+    }
+
+    .box4 {
+      background: radial-gradient(circle at center, pink, blue);
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS作業</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #f79fef, #ffcfff);
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 30px;
+    }
+
+    .image {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .image:hover {
+      transform: scale(1.05);
+    }
+
+    .text {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 20px;
+      line-height: 1.8;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+
+    body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Noto Sans TC', sans-serif;
+  background: linear-gradient(
+    -45deg,
+    #f096e1,
+    #fdb9b9,
+    #f096e1,
+    #fcbaba,
+    #f096e1,
+    #ffb0b0,
+    #f096e1,
+    #ff6a88,
+    #f096e1,
+    #e5a4ff
+  );
+  background-size: 400% 400%;
+  animation: rainbowFlow 8s ease infinite;
+}
+
+@keyframes rainbowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+    
+  </style>
+    
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="aa.jpg" alt="左邊圖片">
+    
+    <div class="text">
+      這是小喵咪<strong>CSS 背景</strong>
+      
+      
+    </div>
+
+    <img class="image" src="bb.jpg" alt="右邊圖片">
+  </div>
+
+ 
+  
+</body>
+</html>
